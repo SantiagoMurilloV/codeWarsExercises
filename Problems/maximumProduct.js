@@ -15,13 +15,14 @@ function maximumProduct(arr){
         return [];
     } else {
         const mul = (a, b) => a * b;
+        
         for (let j = 0; j < arr.length; j++) {
             for (let i = 0; i < arr.length ; i++) {
                 const result = mul(arr[j], arr[i]);
                 resultArr.push(result);
             }
         }
-        //console,log(resultArr)
+        console.log(resultArr)
 
         for(n = 0; n < resultArr.length ; n+=1 ){
             if ( resultArr[n] > max) {

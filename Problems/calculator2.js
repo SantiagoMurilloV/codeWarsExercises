@@ -6,7 +6,6 @@ function calculator(arr, k){
         const mul = (a,b)=> a * b;
         const sum = (a,b)=> a + b;
         const res = (a,b)=> a - b;
-            for(i = 0; i < arr.lenght ; i++){
                 switch(true){
                     case (k===1):
                         for(j = 0 ; j <  arr.lenght ; j ++){
@@ -28,7 +27,7 @@ function calculator(arr, k){
                         break;
                     default:
                         return 'Void!';
-            }}
+            }
 
     }
 console.log(answere)

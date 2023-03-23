@@ -14,11 +14,14 @@
 // Output: 99
 
 function singleNumber(nums) {
-    let number = 0;
-    if(nums.lenght === 0 )
-    number = nums.filter(num => nums.indexOf(num) === nums.lastIndexOf(num));
+  let result;
+  if (nums.length === 0) {
+    return "";
+  }else{
+    result = nums.filter(num => nums.indexOf(num) === nums.lastIndexOf(num));
     // the .filter() returns the array that does not match the filter
-    return number;
+  }
+  return result;
 }
 
-  console.log(singleNumber([2, 2, 2, 2, 5, 5, 5, 5, 7])); // OUTPUT: [7]
+console.log(singleNumber([2, 2, 2, 2, 4, 5, 5, 5, 5])); // OUTPUT: [7]
