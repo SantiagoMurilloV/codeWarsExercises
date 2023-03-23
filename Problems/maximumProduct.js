@@ -15,20 +15,20 @@ function maximumProduct(arr){
         return [];
     } else {
         const mul = (a, b) => a * b;
-        for (let j = 0; j < arr.length ; j++) {
-            for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+            for (let i = 0; i < arr.length ; i++) {
                 const result = mul(arr[j], arr[i]);
                 resultArr.push(result);
             }
         }
-        
+        //console,log(resultArr)
 
-        for(n = 0; n < resultArr.length ; n++ ){
+        for(n = 0; n < resultArr.length ; n+=1 ){
             if ( resultArr[n] > max) {
                 max = resultArr[n];
             }
         }
-        console.log(max)
+        return max;
     }
 }
 console.log(maximumProduct([1, 2, 4])); // Output: 16

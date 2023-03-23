@@ -20,6 +20,7 @@ function calculator(arr, k){
         const mux = (a,b)=> a*b;
         const sum = (a,b)=> a+b;
         const res = (a,b)=> a-b;
+        
         arr.forEach((_,i) => {if ( i < arr.length - 1 ){
             let result =  0;
             switch(true){
