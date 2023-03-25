@@ -16,8 +16,8 @@ function maximumProduct(arr){
     } else {
         const mul = (a, b) => a * b;
         
-        for (let j = 0; j < arr.length; j++) {
-            for (let i = 0; i < arr.length ; i++) {
+        for (let j = 0; j < arr.length; j++) { //0
+            for (let i = 0; i < arr.length ; i++) {//0 //1 //2
                 const result = mul(arr[j], arr[i]);
                 resultArr.push(result);
             }

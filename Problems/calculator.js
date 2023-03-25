@@ -23,31 +23,27 @@ function calculator(arr, k){
         const sum = (a,b)=> a+b;
         const res = (a,b)=> a-b;
 
-        arr.forEach((_,i) => {if ( i < arr.length - 1 ){
+        arr.forEach((_,i) => {if ( i < arr.length -1 ){
             let result =  0;
             switch(true){
                 case (k===1):
-                    for (let j = 0; j < arr.length; j++) {
-                        for (let i = 0; i < arr.length ; i++) {
-                            const result = sum(arr[j], arr[i]);
-                            answer.push(result);
-                        }}
-                    break;
-                case (k===2):
-                    for (let j = 0; j < arr.length; j++) {
-                        for (let i = 0; i < arr.length ; i++) {
-                            const result = res(arr[j], arr[i]);
+                        for (let j = 0; j < arr.length ; j++) {
+                            const result = sum(arr[i], arr[j]);
                             answer.push(result);
                         }
-                    }
+                    break;
+                case (k===2):
+                        for (let j = 0; j < arr.length ; j++) {
+                            const result = res(arr[i], arr[j]);
+                            answer.push(result);
+                        }
                     break;
                 case (k===3):
                     for (let j = 0; j < arr.length; j++) {
-                        for (let i = 0; i < arr.length ; i++) {
-                            const result = mul(arr[j], arr[i]);
+                        const result = mul(arr[i], arr[j]);
                             answer.push(result);
                         }
-                    }
+                    
                     break;
                 default:
                     return 'Void!';

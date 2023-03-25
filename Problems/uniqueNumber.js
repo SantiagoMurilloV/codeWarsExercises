@@ -13,12 +13,13 @@
 // Input: nums = [0,1,0,1,0,1,99]
 // Output: 99
 
+
 function singleNumber(nums) {
   let result;
   if (nums.length === 0) {
     return "";
   }else{
-    result = nums.filter(num => nums.indexOf(num) === nums.lastIndexOf(num));
+    result = nums.filter(num => nums.indexOf(num) !== nums.lastIndexOf(num));
     // the .filter() returns the array that does not match the filter
   }
   return result;
