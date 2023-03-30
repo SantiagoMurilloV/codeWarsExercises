@@ -1,4 +1,8 @@
 
+
+// perform a function that fulfills the game rock, paper, or tiger, and returns the player won or if there is a tie
+
+
 function game(arr) {
     let result = 0;
     let wins1 = 0;
@@ -32,7 +36,7 @@ function game(arr) {
             }else if(arr[i][j] === "rock" && arr[i][j+1] === "scissors"){
                 wins1++;
             }
-            }
+        }
     }
     if(wins1 > wins2) {
         winPlayer = "Player 1";

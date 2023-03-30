@@ -30,6 +30,11 @@ function maximumProduct(arr){
             }
         }
         return max;
+
     }
+    
+
 }
+
+
 console.log(maximumProduct([1, 2, 4])); // Output: 16

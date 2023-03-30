@@ -1,17 +1,17 @@
-// El problema consiste en hacer una funcion que simule una calculadora,que  
-// tenga dos parametros, el primero es el arreglo con el que se va  a operar y 
-// el segundo el numero de la operacion que  se le  va aplicar al arreglo.
+// The problem is to make a function that simulates a calculator, which
+// have two parameters, the first is the array to be operated on and
+// the second is the number of the operation that will be applied to the array.
 
-// 1----- suma
-// 2------ resta
-// 3------ multiplicacion 
+// 1----- sum
+// 2------ subtract
+// 3------ multiplication
 
-// ejemplo:
+// example:
 
 // calculator([1,2,3],3)
 
-// output: [2,3,2,6,3,6]
-[  1, 2, 3, 2, 4, 6, 3, 6, 9, 1, 2, 3, 2, 4,  6, 3, 6, 9 ]
+// output: 
+// [ 1, 2, 3, 2, 4, 6, 3, 6, 9 ]
 
 
 function calculator(arr, k){

@@ -1,3 +1,10 @@
+
+// Make a calculator where K is the number assigned to the operation and arr is the numeric 
+// array you want to do the operation on.
+
+
+
+
 function calculator(arr, k){
     const answere = [];
     if(arr.lenght === 0){
